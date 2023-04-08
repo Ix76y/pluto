@@ -4,6 +4,17 @@
      */
     export let percentage = 0.0;
 
+    /**
+     * Show the percentage above/below the progress bar
+     */
+    export let hideText = false;
+
+    /**
+     * Show x number of steps instead of one line.
+     * 1: Default; One continues line
+     */
+    export let steps = 1;
+
     $: percentageText = clamp(Math.round(percentage * 100), 0, 100);
 
     /**
@@ -17,10 +28,24 @@
 </script>
 
 <div>
-    <p class="mx-auto w-full text-center text-slate-600">{percentageText}%</p>
+    {#if !hideText }
+        <p class="mx-auto w-full text-center text-slate-600">{percentageText}%</p>
+    {/if}
+    {#if steps > 1 }
+        <div class="grid gap" style="grid-template-columns: repeat({steps}, minmax(0, 1fr));">
+        {#each {length: steps} as _, i}
+            {#if percentage >= i/steps }
+                <div class="h-2 rounded-full bg-indigo-300"/>
+            {:else}
+                <div class="h-2 rounded-full bg-indigo-100"/>
+            {/if}
+        {/each}
+        </div>
+    {:else }
     <div class="h-2 w-full rounded-full bg-indigo-100">
-      <div class="z-4 h-2 rounded-full bg-indigo-300" style="width: {percentageText}%;" />
+        <div class="z-4 h-2 rounded-full bg-indigo-300" style="width: {percentageText}%;" />
     </div>
+    {/if}
   </div>
 
 
@@ -43,6 +68,18 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.gap {
+  gap: 1rem;
 }
 
 .rounded-full {

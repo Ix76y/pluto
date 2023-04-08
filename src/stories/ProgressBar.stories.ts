@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/svelte';
 import ProgressBar from '../lib/ProgressBar.svelte';
 
 const meta = {
-    title: 'Pluto/ProgressBars',
+    title: 'Pluto/ProgressBar',
     component: ProgressBar,
     tags: ['autodocs'],
     argTypes: {
@@ -13,9 +13,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-
-export const Linear: Story = {
+export const LinearWithLabel: Story = {
     args: {
       percentage: 0.25,
     },
+};
+
+export const LinearWithNoLabel: Story = {
+  args: {
+    percentage: 0.5,
+    hideText: true,
+  },
+};
+
+export const LinearWithSteps: Story = {
+  args: {
+    percentage: 0.75,
+    steps: 5,
+  },
 };
