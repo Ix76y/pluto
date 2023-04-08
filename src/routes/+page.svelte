@@ -1,3 +1,21 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Button from '../lib/Button.svelte';
+    import ProgressBar from '../lib/ProgressBar.svelte';
+</script>
+<h1>Pluto</h1>
+<p>Test page to showcase the different components:</p>
+<br>
+<h2>Button</h2>
+<Button></Button>
+<h2>Progress Bar</h2>
+<ProgressBar percentage={0.7}/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+</style>
