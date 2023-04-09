@@ -8,7 +8,7 @@
 <h2>Button</h2>
 <Button></Button>
 <h2>Progress Bar</h2>
-<ProgressBar percentage={0.7}/>
+<ProgressBar percentage={0.7} showText='Update In Progress...'/>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');

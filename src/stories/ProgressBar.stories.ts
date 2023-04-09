@@ -22,7 +22,7 @@ export const LinearWithLabel: Story = {
 export const LinearWithNoLabel: Story = {
   args: {
     percentage: 0.5,
-    hideText: true,
+    hideLabel: true,
   },
 };
 
@@ -30,5 +30,12 @@ export const LinearWithSteps: Story = {
   args: {
     percentage: 0.75,
     steps: 5,
+  },
+};
+
+export const LinearWithText: Story = {
+  args: {
+    percentage: 0.5,
+    showText: 'Update In Progress...',
   },
 };

@@ -2,7 +2,7 @@
     export let label = 'Click Me';
 </script>
 
-<button class="button rounded border border-indigo-300 bg-indigo-50 px-4 py-2 text-indigo-900 hover:border-indigo-400 hover:bg-indigo-100 active:bg-indigo-200 dark:border-indigo-900 dark:bg-indigo-950 dark:text-white dark:hover:border-indigo-800 dark:hover:bg-indigo-900 dark:active:bg-indigo-800">
+<button class="button rounded border border-indigo-300 bg-indigo-50 px-4 py-2 text-indigo-900 hover:border-indigo-400 hover:bg-indigo-100 active:bg-indigo-200">
   {label} 
 </button>
 <style>
@@ -59,38 +59,6 @@
 .active\:bg-indigo-200:active {
   --tw-bg-opacity: 1;
   background-color: rgb(199 210 254 / var(--tw-bg-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:border-indigo-900 {
-    --tw-border-opacity: 1;
-    border-color: rgb(49 46 129 / var(--tw-border-opacity));
-  }
-
-  .dark\:bg-indigo-950 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 27 75 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:hover\:border-indigo-800:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 48 163 / var(--tw-border-opacity));
-  }
-
-  .dark\:hover\:bg-indigo-900:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(49 46 129 / var(--tw-bg-opacity));
-  }
-
-  .dark\:active\:bg-indigo-800:active {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 48 163 / var(--tw-bg-opacity));
-  }
 }
 
 
