@@ -1,3 +1,5 @@
+<svelte:options tag="pl-badge" />
+
 <script lang="ts">
     /**
      * Set the variant to one of the following: 

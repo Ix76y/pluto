@@ -1,3 +1,5 @@
+<svelte:options tag="pl-checkbox" />
+
 <script lang="ts">
     /**
      * id for the input field and label

@@ -1,3 +1,5 @@
+<svelte:options tag="pl-button" />
+
 <script>
     export let label = 'Click Me';
 </script>
@@ -22,13 +24,12 @@
 }
 
 .border-indigo-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(165 180 252 / var(--tw-border-opacity));
+  border-color: rgb(165 180 252);
 }
 
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+  background-color: rgb(238 242 255);
 }
 
 .px-4 {
@@ -42,23 +43,19 @@
 }
 
 .text-indigo-900 {
-  --tw-text-opacity: 1;
-  color: rgb(49 46 129 / var(--tw-text-opacity));
+  color: rgb(49 46 129);
 }
 
 .hover\:border-indigo-400:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(129 140 248 / var(--tw-border-opacity));
+  border-color: rgb(129 140 248);
 }
 
 .hover\:bg-indigo-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+  background-color: rgb(224 231 255);
 }
 
 .active\:bg-indigo-200:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(199 210 254 / var(--tw-bg-opacity));
+  background-color: rgb(199 210 254);
 }
 
 

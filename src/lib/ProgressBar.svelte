@@ -1,3 +1,5 @@
+<svelte:options tag="pl-progressbar" />
+
 <script lang="ts">
     /**
      * Percentage between zero and 1 for 0% and 100%
