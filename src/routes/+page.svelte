@@ -16,6 +16,14 @@
   <p>This is a Test page to showcase the different components.</p>
   <br>
 
+  <h1>Usage</h1>
+  <Details summary="Svelte Project">
+    <p>You can use the components directly in any of your Svelte projects and custimse them if you want.</p>
+    <p>Either clone the full repository from my <a href="https://github.com/Ix76y/pluto" target="_blank">GitHub Repository</a> or copy the components that you like from the src/lib/ folder.</p>
+  </Details>
+
+
+
   <h1>Components</h1>
   
   <div class="flex-container">
@@ -59,20 +67,26 @@
   <p>The ProgressBar allows to show the status of an ongoing operation, for example, loading further content.</p>
   <ProgressBar percentage={0.7} showText='Update In Progress...'/>
   <div class="box" style="margin-top: 16px;">
-    <Details summary="Examples">
-      <p>The progress bar can be customised in multiple ways:</p>
-      <h4>percentage: number</h4>
-      <p>The actual percentage of the current progress. Should be a number between 0 and 1.</p>
-      <ProgressBar percentage={0.7}/>
-      <h4>hideLabel: boolean</h4>
-      <p>Hides the percentage label and only shows the progress bar.</p>
-      <ProgressBar percentage={0.7} hideLabel/>
-      <h4>steps: number (Default: 1)</h4>
-      <p>Splits the progress bar into steps number of smaller pieces.</p>
-      <ProgressBar percentage={0.7} steps={5}/>
-      <h4>showText: string</h4>
-      <p>Shows an extra Text next to the percentage, to give the user extra information. </p>
-      <ProgressBar percentage={0.7} showText='Update In Progress...'/>
+    <Details summary="Variants">
+      <p>ProgressBar components can be customised in multiple diffent ways:</p>
+      <div class="" style="margin-top: 16px;">
+        <br><br>
+        <p>Hides the percentage label and only shows the progress bar.</p>
+        <ProgressBar percentage={0.7} hideLabel/>
+        <br>
+        <code>&lt;ProgressBar precentage={0.7} hideLabel/&gt;</code>
+        <br><br>
+        <p>Splits the progress bar into steps number of smaller pieces.</p>
+        <ProgressBar percentage={0.7} steps={5}/>
+        <br>
+        <code>&lt;ProgressBar precentage={0.7} steps={5}/&gt;</code>
+        <br><br>
+        <p>Shows an extra Text next to the percentage, to give the user extra information. </p>
+        <ProgressBar percentage={0.7} showText='Update In Progress...'/>
+        <br>
+        <code>&lt;ProgressBar precentage={0.7} showText="Update In Progress..."/&gt;</code>
+        <br>
+      </div>
     </Details>
   </div>
 
@@ -88,7 +102,7 @@
     <code>&lt;RadioButton name="radio-group" id="1"&gt;Option&lt;/RadioButton&gt;</code>
   </div>
   <p>Radio Buttons allow the users to select one value from a group of values.</p>
-  <p>To group radio buttons together thez must have the same name. </p>
+  <p>To group radio buttons together they must have the same name. </p>
   <form action="">
     <RadioButton name="radio-group" id="1">First Option</RadioButton>
     <RadioButton name="radio-group" id="2">Second Option</RadioButton>
