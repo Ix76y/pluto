@@ -4,19 +4,31 @@
     import ProgressBar from '../lib/ProgressBar.svelte';
     import CheckBox from '../lib/CheckBox.svelte';
     import Input from '../lib/Input.svelte';
+    import RadioButton from '../lib/RadioButton.svelte';
 </script>
+
 <h1>Pluto 
     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 512 512"><path d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><circle cx="256" cy="256" r="160" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
 </h1>
 <p>Pluto is a webcomponent library written with <strong>Svelte</strong>.</p>
 <p>This is a Test page to showcase the different components:</p>
 <br>
+
 <h2>Button</h2>
 <Button></Button>
+
 <h2>Progress Bar</h2>
 <ProgressBar percentage={0.7} showText='Update In Progress...'/>
+
 <h2>Checkbox</h2>
 <CheckBox>Check This Out</CheckBox>
+
+<h2>RadioButton</h2>
+<form action="">
+  <RadioButton id="1">First Option</RadioButton>
+  <RadioButton id="2">Second Option</RadioButton>
+  <RadioButton id="3">Third Option</RadioButton>
+</form>
 
 <h2>Badges</h2>
 <Badges>Primary</Badges>
