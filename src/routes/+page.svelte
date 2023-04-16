@@ -25,9 +25,9 @@
 
 <h2>RadioButton</h2>
 <form action="">
-  <RadioButton id="1">First Option</RadioButton>
-  <RadioButton id="2">Second Option</RadioButton>
-  <RadioButton id="3">Third Option</RadioButton>
+  <RadioButton name="radio-group" id="1">First Option</RadioButton>
+  <RadioButton name="radio-group" id="2">Second Option</RadioButton>
+  <RadioButton name="radio-group" id="3">Third Option</RadioButton>
 </form>
 
 <h2>Badges</h2>
@@ -44,10 +44,8 @@
 <Input label="Password:" labelPosition="left" inputType="password"/>
 <h2>In Progress</h2>
 <ul>
-    <li>Input</li>
     <li>Card</li>
     <li>Details</li>
-    <li>Radio Button</li>
     <li>Switch</li>
 </ul>
 
