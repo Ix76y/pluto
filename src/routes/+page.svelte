@@ -80,12 +80,15 @@
     <h2>Checkbox</h2>
     <code>&lt;CheckBox&gt;Check This Out&lt;/CheckBox&gt;</code>
   </div>
+  <p>Checkboxes allow users to toggle specific values.</p>
   <CheckBox>Check This Out</CheckBox>
 
   <div class="flex-container">
     <h2>Radio Button</h2>
     <code>&lt;RadioButton name="radio-group" id="1"&gt;Option&lt;/RadioButton&gt;</code>
   </div>
+  <p>Radio Buttons allow the users to select one value from a group of values.</p>
+  <p>To group radio buttons together thez must have the same name. </p>
   <form action="">
     <RadioButton name="radio-group" id="1">First Option</RadioButton>
     <RadioButton name="radio-group" id="2">Second Option</RadioButton>
@@ -118,20 +121,39 @@
     </Details>
   </div>
 
-  <h2>Input</h2>
+  <div class="flex-container">
+    <h2>Input</h2>
+    <code>&lt;Input label="Name" /&gt;</code>
+  </div>
   <Input label="Normal Input Field"/>
-  <Input label="Website" prefix="https://" placeholder="domain.com"/>
-  <Input label="Email" suffix="@gmail.com" placeholder="Email"/>
-  <Input label="Password:" labelPosition="left" inputType="password"/>
-
+  <div style="margin-top: 16px;">
+    <Details summary="Variants">
+      <p>Input components can be customised in multiple diffent ways:</p>
+      <div class="" style="margin-top: 16px;">
+        <Input label="Website" prefix="https://" placeholder="domain.com"/>
+        <br>
+        <code>&lt;Input label="Website" prefix="https://" placeholder="domain.com"/&gt;</code>
+        <br><br>
+        <Input label="Email" suffix="@gmail.com" placeholder="Email"/>
+        <br>
+        <code>&lt;Input label="Email" suffix="@gmail.com" placeholder="Email"/&gt;</code>
+        <br><br>
+        <Input label="Password:" labelPosition="left" inputType="password"/>
+        <br>
+        <code>&lt;Input label="Password:" labelPosition="left" inputType="password"/&gt;</code>
+        <br>
+      </div>
+    </Details>
+  </div>
 
   <h2>WIP (Work In Progress)</h2>
   <p>This is a list of <strong>W</strong>ork <strong>I</strong>n <strong>P</strong>rogress components that are on the list to be added in the future:</p>
   <ul>
       <li>Card</li>
-      <li>Details</li>
       <li>Switch</li>
       <li>Alert</li>
+      <li>Rating</li>
+      <li>Sidebar</li>
   </ul>
 </div>
 
